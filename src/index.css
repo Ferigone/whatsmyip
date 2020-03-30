@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1b262c;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  height: auto;
+  width: 42.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardInfo{
+  background-color: #27373F;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 2.5px;
+  width: auto;
+  box-shadow: black 0px 0px 10px -7px;
+}
+
+.cardInfo p{
+  color: #bbe1fa;
+  height: auto;
+}
+
+.address{
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.copyButton{
+  background: none;
+  border: none;
+}
+
+.copyButton svg{
+  fill: #bbe1fa !important;
+  cursor: pointer;
+}
+
+.address svg{
+  fill: #4CAF50;
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+  top: -1px;
+  position: relative;
+}
+
+.title{
+  margin-bottom: 50px;
+  color: #bbe1fa;
+  font-weight: 300;
+}
+
+.locationName{
+  margin-bottom: 5px;
+
+  flex-wrap: nowrap;
+}
+
+.loading{
+  color: #bbe1fa;
+  font-weight: 200;
+}
+
+@media only screen and (max-width:1320px){
+  .card{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .ip,.location{
+    width: 100%;
+  }
+  .card{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .card{
+    width: 90%;
+  }
+}
+
